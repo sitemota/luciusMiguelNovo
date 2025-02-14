@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    font-family: "Space Grotesk", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    background-color: #3c4879;
+    display: flex;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.container {
+    height: 100%;
+    width: 900px;
+    /*background-color: brown;*/
+    display: flex;
+    margin: auto;
+}
+
+.logo {
+    width: 20%;
+    /*background-color:aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 60%;
+    height: 100%;
+    /*background-color: blanchedalmond; */
+}
+
+.entrar {
+    width: 20%;
+    height: 100%;
+    /*background-color: violet;*/
+}
+
+.logo img {
+    width: 40%;
+    cursor: pointer;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+
+nav {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    /*background-color: rgb(18, 248, 248);*/
+    border-radius: 10px;
+    transition: .5s all;
+}
+
+li:hover {
+    background-color: #fff;
+    color: #3c4879;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    padding: 15px 25px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.btn-entrar:hover {
+    background-color: #fff;
+    color: #3c4879;
+}
+
+.active {
+    background-color: #fff;
+    color: #3c4879;
+}
+
+
+
+@media(max-width: 800px) {
+    .entrar {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
+
+    li {
+        color: #000;
+    }
+}
+
+
+@media(max-width: 320px) {
+    ul {
+        position: absolute;
+        background-color: red;
+        top: 80px;
+        flex-direction: column;
+    }
+
+    .entrar {
+        position: absolute;
+        display: block;
+        right: 60px;
+        top: 15px;
+        width: 80px;
+    }
+}
