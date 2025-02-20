@@ -68,6 +68,12 @@ body {
     margin-top: 20px;
 }
 
+.botao a{
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
 .botoes{
     width: 100%;
     display: flex;
